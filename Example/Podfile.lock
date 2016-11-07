@@ -1,0 +1,37 @@
+PODS:
+  - Alert (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - Nimble (3.2.0)
+  - Nimble-Snapshots (4.3.0):
+    - Nimble-Snapshots/Core (= 4.3.0)
+  - Nimble-Snapshots/Core (4.3.0):
+    - FBSnapshotTestCase (~> 2.0)
+    - Nimble
+    - Quick
+  - Quick (0.10.0)
+
+DEPENDENCIES:
+  - Alert (from `../`)
+  - FBSnapshotTestCase
+  - Nimble (~> 3.0)
+  - Nimble-Snapshots
+  - Quick (~> 0.8)
+
+EXTERNAL SOURCES:
+  Alert:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Alert: 14fbdb357995433504906dd95af8c709f2044598
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  Nimble-Snapshots: 4ba722c35b73a680cbd856e4bc22076dfb8085d4
+  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
+
+PODFILE CHECKSUM: d21c0dc5141996cc8497476aaaaa4cdd16ea4c74
+
+COCOAPODS: 1.1.0.rc.3
