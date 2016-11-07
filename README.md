@@ -9,6 +9,9 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+Beware the storyboard in example uses UIStackView, So it can just runs on above iOS 9.0 device and simulator.
+But Alert uses Swift 3.0 can run on above iOS 8 device and simulator.
+
 ## Requirements
 
 ## Installation

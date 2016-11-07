@@ -11,7 +11,7 @@ import UIKit
 public struct Alert {
   
   /// create a UIAlertController
-  static func with(title t: String, message: String, style: UIAlertControllerStyle, completion: (() -> Void)? = nil) -> UIAlertController {
+  public static func with(title t: String, message: String, style: UIAlertControllerStyle, completion: (() -> Void)? = nil) -> UIAlertController {
     
     presentCompletion = completion
     return UIAlertController(title: t, message: message, preferredStyle: style)
@@ -25,13 +25,13 @@ public protocol AlertCreatable {
   func alert(with title: String, message: String, style: UIAlertControllerStyle, completion: (() -> Void)?) -> UIAlertController
 }
 
-protocol AlertPresentable {
+public protocol AlertPresentable {
   
   // to present alert controller
   func show(_ completion: (() -> Void)?)
 }
 
-protocol AlertActionBindable {
+public protocol AlertActionBindable {
   
   // add a button to a alert controller with properties and handler
   func bind(button title: String, style: UIAlertActionStyle, completion: ((UIAlertAction) -> Void)?) -> UIAlertController
@@ -40,7 +40,7 @@ protocol AlertActionBindable {
   func bind(action a: UIAlertAction) -> UIAlertController
 }
 
-protocol AlertTextFieldBindable {
+public protocol AlertTextFieldBindable {
   
   /// add a textfield to a alert controller with properties and handler
   func bind(textfield text: String?, placeholder: String, secure: Bool, returnHandler: @escaping (UITextField) -> Void) -> UIAlertController
@@ -55,7 +55,7 @@ extension AlertCreatable where Self: NSObject {
   }
 }
 
-extension AlertPresentable where Self: UIAlertController {
+public extension AlertPresentable where Self: UIAlertController {
   
   func show(_ completion: (() -> Void)? = nil) {
     
@@ -68,7 +68,7 @@ extension AlertPresentable where Self: UIAlertController {
   }
 }
 
-extension AlertActionBindable where Self: UIAlertController {
+public extension AlertActionBindable where Self: UIAlertController {
   
   func bind(button title: String, style: UIAlertActionStyle = .default, completion: ((UIAlertAction) -> Void)?) -> UIAlertController {
     
@@ -85,7 +85,7 @@ extension AlertActionBindable where Self: UIAlertController {
   }
 }
 
-extension AlertTextFieldBindable where Self: UIAlertController {
+public extension AlertTextFieldBindable where Self: UIAlertController {
   
   func bind(textfield text: String? = nil, placeholder: String, secure: Bool = false, returnHandler: @escaping (UITextField) -> Void) -> UIAlertController {
     
@@ -101,7 +101,7 @@ extension AlertTextFieldBindable where Self: UIAlertController {
   }
 }
 
-extension UIAlertController {
+public extension UIAlertController {
   
   func textFieldDidBeginEdit() {
     
