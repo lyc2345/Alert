@@ -21,7 +21,7 @@ Alert is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "Alert"
+pod 'Alert', :git => 'https://github.com/lyc2345/alert.git'
 ```
 
 Usage:
