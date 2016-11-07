@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+UIAlertController customized to add much buttons or textfields you like and present it. You don't have write many many function to present different type of UIAlertController.
                        DESC
 
   s.homepage         = 'https://github.com/lyc2345/Alert'
