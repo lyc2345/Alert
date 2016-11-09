@@ -3,12 +3,21 @@ use_frameworks!
 target 'Alert_Example' do
   pod 'Alert', :path => '../'
 
-  target 'Alert_Tests' do
+  target 'ExampleTests' do
     inherit! :search_paths
 
   pod 'Quick'
   pod 'Nimble'
   pod 'FBSnapshotTestCase'
   pod 'Nimble-Snapshots'
+  end
+  
+  target 'ExampleUITests' do
+    inherit! :search_paths
+    
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'FBSnapshotTestCase'
+    pod 'Nimble-Snapshots'
   end
 end

@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "Alert_Tests.xctest"
-               BlueprintName = "Alert_Tests"
+               BuildableName = "ExampleTests.xctest"
+               BlueprintName = "ExampleTests"
                ReferencedContainer = "container:Alert.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,18 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "Alert_Tests.xctest"
-               BlueprintName = "Alert_Tests"
+               BuildableName = "ExampleTests.xctest"
+               BlueprintName = "ExampleTests"
+               ReferencedContainer = "container:Alert.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F6B1ABC51DD2B9EE00E87297"
+               BuildableName = "ExampleUITests.xctest"
+               BlueprintName = "ExampleUITests"
                ReferencedContainer = "container:Alert.xcodeproj">
             </BuildableReference>
          </TestableReference>
