@@ -5,16 +5,16 @@ target 'Alert_Example' do
 
   target 'ExampleTests' do
     inherit! :search_paths
-
-  pod 'Quick'
-  pod 'Nimble'
-  pod 'FBSnapshotTestCase'
-  pod 'Nimble-Snapshots'
+    pod 'Alert', :path => '../'
+    pod 'Quick'
+    pod 'Nimble'
+    pod 'FBSnapshotTestCase'
+    pod 'Nimble-Snapshots'
   end
   
   target 'ExampleUITests' do
     inherit! :search_paths
-    
+    pod 'Alert', :path => '../'
     pod 'Quick'
     pod 'Nimble'
     pod 'FBSnapshotTestCase'
