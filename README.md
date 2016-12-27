@@ -45,7 +45,7 @@ then add a Textfield to UIAlertController
   .default, completion: {
     (action1) in  
 
-    )}.bint(textfield: "Title", placeHolder: "PlaceHolder", secure: false, returnHandler: {
+    )}.bind(textfield: "Title", placeHolder: "PlaceHolder", secure: false, returnHandler: {
     (textfield1) in
     
     })
@@ -57,7 +57,7 @@ then present this UIAlertController
   .default, completion: {
     (action1) in  
 
-    )}.bint(textfield: "Title", placeHolder: "PlaceHolder", secure: false, returnHandler: {
+    )}.bind(textfield: "Title", placeHolder: "PlaceHolder", secure: false, returnHandler: {
     (textfield1) in
     
     }).show()
