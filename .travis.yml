@@ -11,11 +11,10 @@ env:
 # cache: cocoapods
 podfile: Example/Podfile
 before_install:
-- gem install cocoapods # Since Travis is not always on latest version
-- pod install --project-directory=Example
-  - |
-      gem install xcpretty -N --no-ri --no-rdoc
-
+#- gem install cocoapods # Since Travis is not always on latest version
+#- pod install --project-directory=Example
+  #- | gem install xcpretty -N --no-ri --no-rdoc
+  - pod repo update
 
 script:
 # - set -o pipefail && xcodebuild test -verbose -workspace Example/Alert.xcworkspace -scheme Alert-Example -sdk iphonesimulator9.3 ONLY_ACTIVE_ARCH=NO | xcpretty
