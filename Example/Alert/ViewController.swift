@@ -65,6 +65,7 @@ class ViewController: UIViewController {
     if btn == 0 {
       
       Alert.with(title: "Warning", message: "Button at least 1", style: .alert).bind(button: "I know!", style: .default, completion: nil).show()
+			return
     }
     
     alertController = Alert.with(title: "Example", message: "I am a example", style: .alert)
