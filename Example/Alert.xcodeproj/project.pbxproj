@@ -12,7 +12,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		C7B3EFCC228F16DA0ADF03FD /* Pods_Alert_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6181CB8E5CE10759FC262D5D /* Pods_Alert_Example.framework */; };
+		C545D4C14F584D43FCB5931C /* Pods_Alert_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6181CB8E5CE10759FC262D5D /* Pods_Alert_Example.framework */; };
 		F62773CF1DD0799E00C05350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F62773CD1DD0799E00C05350 /* Main.storyboard */; };
 		F62773D01DD0799E00C05350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62773CE1DD0799E00C05350 /* ViewController.swift */; };
 		F6B1ABC91DD2B9EE00E87297 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B1ABC81DD2B9EE00E87297 /* UITests.swift */; };
@@ -69,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7B3EFCC228F16DA0ADF03FD /* Pods_Alert_Example.framework in Frameworks */,
+				C545D4C14F584D43FCB5931C /* Pods_Alert_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

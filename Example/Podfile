@@ -1,9 +1,8 @@
 use_frameworks!
 
-pod 'Alert', :path => '../'
-
 target 'Alert_Example' do
 	
+	pod 'Alert', :path => '../'
 
   target 'ExampleTests' do
     inherit! :search_paths
