@@ -103,7 +103,7 @@ public extension AlertTextFieldBindable where Self: UIAlertController {
 
 public extension UIAlertController {
   
-  func textFieldDidBeginEdit() {
+  @objc func textFieldDidBeginEdit() {
     
     guard let alertWindow = UIApplication.shared.windows.filter({ $0.rootViewController?.presentedViewController is UIAlertController }).first else {
       return
