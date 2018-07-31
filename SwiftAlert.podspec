@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'Alert'
-  s.version          = '0.1.5'
+  s.name             = 'SwiftAlert'
+  s.version          = '0.1.6'
   s.summary          = 'UIAlertController customized to add much buttons or textfields you like'
 
 # This description is used to generate tags and improve search results.

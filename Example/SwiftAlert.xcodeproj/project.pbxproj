@@ -40,7 +40,7 @@
 		1EC4F69825BD36D92DBDCEF8 /* Pods-ExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleTests/Pods-ExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		26D52A9A45AB0856F48174C4 /* Pods-ExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleTests/Pods-ExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58E755DEEE8CB51D929D75A1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* Alert_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alert_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* SwiftAlert_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAlert_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 		9AF77B36E42246D90D22D11A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9C9B88894197659ED9661139 /* Pods-Alert_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Alert_Example/Pods-Alert_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B950DE26F64DE11B06C306DC /* Pods-Alert_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alert_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Alert_Example/Pods-Alert_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C2FAFA1C54C8B8FA41DC1551 /* Alert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Alert.podspec; path = ../Alert.podspec; sourceTree = "<group>"; };
+		C2FAFA1C54C8B8FA41DC1551 /* SwiftAlert.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftAlert.podspec; path = ../SwiftAlert.podspec; sourceTree = "<group>"; };
 		CD1D4CDEC3FA230170269840 /* Pods-ExampleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleUITests/Pods-ExampleUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F4CCEEC11D6B151EB389BA07 /* Pods_ExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62773CD1DD0799E00C05350 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for Alert */,
+				607FACD21AFB9204008FA782 /* Example for SwiftAlert */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				F6B1ABC71DD2B9EE00E87297 /* UITests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -118,14 +118,14 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* Alert_Example.app */,
+				607FACD01AFB9204008FA782 /* SwiftAlert_Example.app */,
 				607FACE51AFB9204008FA782 /* ExampleTests.xctest */,
 				F6B1ABC61DD2B9EE00E87297 /* ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for Alert */ = {
+		607FACD21AFB9204008FA782 /* Example for SwiftAlert */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -135,7 +135,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for Alert";
+			name = "Example for SwiftAlert";
 			path = Alert;
 			sourceTree = "<group>";
 		};
@@ -167,7 +167,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				C2FAFA1C54C8B8FA41DC1551 /* Alert.podspec */,
+				C2FAFA1C54C8B8FA41DC1551 /* SwiftAlert.podspec */,
 				9AF77B36E42246D90D22D11A /* README.md */,
 				58E755DEEE8CB51D929D75A1 /* LICENSE */,
 			);
@@ -199,9 +199,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* Alert_Example */ = {
+		607FACCF1AFB9204008FA782 /* SwiftAlert_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Alert_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SwiftAlert_Example" */;
 			buildPhases = (
 				54A39B7EBDB469658196A198 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -214,9 +214,9 @@
 			);
 			dependencies = (
 			);
-			name = Alert_Example;
+			name = SwiftAlert_Example;
 			productName = Alert;
-			productReference = 607FACD01AFB9204008FA782 /* Alert_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* SwiftAlert_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		607FACE41AFB9204008FA782 /* ExampleTests */ = {
@@ -289,7 +289,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Alert" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "SwiftAlert" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -302,7 +302,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* Alert_Example */,
+				607FACCF1AFB9204008FA782 /* SwiftAlert_Example */,
 				607FACE41AFB9204008FA782 /* ExampleTests */,
 				F6B1ABC51DD2B9EE00E87297 /* ExampleUITests */,
 			);
@@ -505,12 +505,12 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* Alert_Example */;
+			target = 607FACCF1AFB9204008FA782 /* SwiftAlert_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 		F6B1ABCC1DD2B9EE00E87297 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* Alert_Example */;
+			target = 607FACCF1AFB9204008FA782 /* SwiftAlert_Example */;
 			targetProxy = F6B1ABCB1DD2B9EE00E87297 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -625,7 +625,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.SwiftAlert-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -642,7 +642,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.SwiftAlert-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -728,7 +728,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "Alert" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "SwiftAlert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,
@@ -737,7 +737,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Alert_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "SwiftAlert_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,

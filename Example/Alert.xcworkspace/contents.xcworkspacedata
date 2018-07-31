@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Alert.xcodeproj">
+      location = "group:/Users/stan/Desktop/le_code_est_la_vie/ios/Alert/Example/SwiftAlert.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "Alert_Example.app"
-               BlueprintName = "Alert_Example"
-               ReferencedContainer = "container:Alert.xcodeproj">
+               BuildableName = "SwiftAlert_Example.app"
+               BlueprintName = "SwiftAlert_Example"
+               ReferencedContainer = "container:SwiftAlert.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
                BuildableName = "ExampleTests.xctest"
                BlueprintName = "ExampleTests"
-               ReferencedContainer = "container:Alert.xcodeproj">
+               ReferencedContainer = "container:SwiftAlert.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -49,7 +49,7 @@
                BlueprintIdentifier = "607FACE41AFB9204008FA782"
                BuildableName = "ExampleTests.xctest"
                BlueprintName = "ExampleTests"
-               ReferencedContainer = "container:Alert.xcodeproj">
+               ReferencedContainer = "container:SwiftAlert.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -59,7 +59,7 @@
                BlueprintIdentifier = "F6B1ABC51DD2B9EE00E87297"
                BuildableName = "ExampleUITests.xctest"
                BlueprintName = "ExampleUITests"
-               ReferencedContainer = "container:Alert.xcodeproj">
+               ReferencedContainer = "container:SwiftAlert.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -67,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Alert_Example.app"
-            BlueprintName = "Alert_Example"
-            ReferencedContainer = "container:Alert.xcodeproj">
+            BuildableName = "SwiftAlert_Example.app"
+            BlueprintName = "SwiftAlert_Example"
+            ReferencedContainer = "container:SwiftAlert.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -90,9 +90,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Alert_Example.app"
-            BlueprintName = "Alert_Example"
-            ReferencedContainer = "container:Alert.xcodeproj">
+            BuildableName = "SwiftAlert_Example.app"
+            BlueprintName = "SwiftAlert_Example"
+            ReferencedContainer = "container:SwiftAlert.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -109,9 +109,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Alert_Example.app"
-            BlueprintName = "Alert_Example"
-            ReferencedContainer = "container:Alert.xcodeproj">
+            BuildableName = "SwiftAlert_Example.app"
+            BlueprintName = "SwiftAlert_Example"
+            ReferencedContainer = "container:SwiftAlert.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
