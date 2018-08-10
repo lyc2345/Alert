@@ -11,7 +11,7 @@ import UIKit
 public struct Alert {
   
   /// create a UIAlertController
-  public static func with(title t: String, message: String, style: UIAlertControllerStyle, completion: (() -> Void)? = nil) -> UIAlertController {
+  public static func with(title t: String?, message: String?, style: UIAlertControllerStyle, completion: (() -> Void)? = nil) -> UIAlertController {
     
     presentCompletion = completion
     return UIAlertController(title: t, message: message, preferredStyle: style)
@@ -22,7 +22,7 @@ var presentCompletion: (() -> Void)?
 
 public protocol AlertCreatable {
   
-  func alert(with title: String, message: String, style: UIAlertControllerStyle, completion: (() -> Void)?) -> UIAlertController
+  func alert(with title: String?, message: String?, style: UIAlertControllerStyle, completion: (() -> Void)?) -> UIAlertController
 }
 
 public protocol AlertPresentable {
@@ -49,7 +49,7 @@ public protocol AlertTextFieldBindable {
 
 extension AlertCreatable where Self: NSObject {
   
-  public func alert(with title: String, message: String, style: UIAlertControllerStyle, completion: (() -> Void)? = nil) -> UIAlertController {
+  public func alert(with title: String?, message: String?, style: UIAlertControllerStyle, completion: (() -> Void)? = nil) -> UIAlertController {
     presentCompletion = completion
     return UIAlertController(title: title, message: message, preferredStyle: style)
   }

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Alert
+import SwiftAlert
 
 class ViewController: UIViewController {
   
@@ -15,6 +15,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var buttonAmountLabel: UILabel!
   @IBOutlet weak var textfieldAmountLabel: UILabel!
   
+  var defaultAlertStyle: UIAlertControllerStyle = .alert
   var btn: Int! = 0
   var tex: Int! = 0
   
@@ -59,6 +60,17 @@ class ViewController: UIViewController {
     textfieldAmountLabel.text = "\(tex!)"
   }
   
+  @IBAction func segmentControlDidTap(_ sender: Any) {
+    
+    guard let segment = (sender as? UISegmentedControl) else {
+      return
+    }
+    if segment.selectedSegmentIndex == 0 {
+      defaultAlertStyle = .alert
+    } else if segment.selectedSegmentIndex == 1 {
+      defaultAlertStyle = .actionSheet
+    }
+  }
   
   @IBAction func presentAlert(_ sender: Any) {
     
@@ -68,7 +80,7 @@ class ViewController: UIViewController {
 			return
     }
     
-    alertController = Alert.with(title: "Example", message: "I am a example", style: .alert)
+    alertController = Alert.with(title: nil, message: nil, style: defaultAlertStyle)
     
     for i in 0 ..< btn {
       

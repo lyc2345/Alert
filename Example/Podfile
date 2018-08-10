@@ -1,24 +1,27 @@
+
+platform :ios, '9.0'
+
 use_frameworks!
 
-target 'Alert_Example' do
+target 'SwiftAlert_Example' do
 	
-	pod 'Alert', :path => '../'
+	pod 'SwiftAlert', :path => '../'
 
-  target 'ExampleTests' do
+  target 'SwiftAlert_ExampleTests' do
     inherit! :search_paths
-    pod 'Alert', :path => '../'
+    pod 'SwiftAlert', :path => '../'
     pod 'Quick'
     pod 'Nimble'
     pod 'FBSnapshotTestCase'
     pod 'Nimble-Snapshots'
   end
   
-  target 'ExampleUITests' do
-    inherit! :search_paths
-    pod 'Alert', :path => '../'
-    pod 'Quick'
-    pod 'Nimble'
-    pod 'FBSnapshotTestCase'
-    pod 'Nimble-Snapshots'
-  end
+#  target 'ExampleUITests' do
+#    inherit! :search_paths
+#    pod 'SwiftAlert', :path => '../'
+#    pod 'Quick'
+#    pod 'Nimble'
+#    pod 'FBSnapshotTestCase'
+#    pod 'Nimble-Snapshots'
+#  end
 end
