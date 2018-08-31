@@ -28,7 +28,7 @@ public protocol AlertCreatable {
 public protocol AlertPresentable {
   
   // to present alert controller
-  func show(_ completion: (() -> Void)?)
+  func show(on viewController: UIViewController?, completion: (() -> Void)?)
 }
 
 public protocol AlertActionBindable {
@@ -57,11 +57,16 @@ extension AlertCreatable where Self: NSObject {
 
 public extension AlertPresentable where Self: UIAlertController {
   
-  func show(_ completion: (() -> Void)? = nil) {
-    
+  func show(on viewController: UIViewController? = nil,
+            completion: (() -> Void)? = nil) {
+
     guard let rootVC = UIViewController.topVC else {
       print("Something wrong with your rootViewController at: \(#file), func: \(#function), line: \(#line)")
       return
+    }
+    if let vc = viewController {
+        vc.present(self, animated: true, completion: completion ?? presentCompletion)
+        return
     }
     rootVC.present(self, animated: true, completion: completion ?? presentCompletion)
   }
