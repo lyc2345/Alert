@@ -65,8 +65,32 @@ public extension AlertPresentable where Self: UIAlertController {
       return
     }
     if let vc = viewController {
-        vc.present(self, animated: true, completion: completion ?? presentCompletion)
-        return
+      let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
+      if deviceIdiom == .pad {
+        modalPresentationStyle = .popover
+        if let popoverPC = popoverPresentationController {
+          popoverPC.sourceView = rootVC.view
+          popoverPC.sourceRect = CGRect(x: rootVC.view.bounds.midX,
+                                        y: rootVC.view.bounds.midY,
+                                        width: 0,
+                                        height: 0)
+          popoverPC.permittedArrowDirections = []
+        }
+      }
+      vc.present(self, animated: true, completion: completion ?? presentCompletion)
+      return
+    }
+    let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
+    if deviceIdiom == .pad {
+      modalPresentationStyle = .popover
+      if let popoverPC = popoverPresentationController {
+        popoverPC.sourceView = rootVC.view
+        popoverPC.sourceRect = CGRect(x: rootVC.view.bounds.midX,
+                                      y: rootVC.view.bounds.midY,
+                                      width: 0,
+                                      height: 0)
+        popoverPC.permittedArrowDirections = []
+      }
     }
     rootVC.present(self, animated: true, completion: completion ?? presentCompletion)
   }
