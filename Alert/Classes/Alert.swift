@@ -77,7 +77,13 @@ public extension AlertPresentable where Self: UIAlertController {
           popoverPC.permittedArrowDirections = []
         }
       }
-      vc.present(self, animated: true, completion: completion ?? presentCompletion)
+      if let presentedVC = vc.presentedViewController {
+        presentedVC.dismiss(animated: false) {
+          vc.present(self, animated: true, completion: completion ?? presentCompletion)
+        }
+      } else {
+        vc.present(self, animated: true, completion: completion ?? presentCompletion)
+      }
       return
     }
     let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
@@ -92,7 +98,14 @@ public extension AlertPresentable where Self: UIAlertController {
         popoverPC.permittedArrowDirections = []
       }
     }
-    rootVC.present(self, animated: true, completion: completion ?? presentCompletion)
+    //rootVC.present(self, animated: true, completion: completion ?? presentCompletion)
+    if let presentedVC = rootVC.presentedViewController {
+      presentedVC.dismiss(animated: false) {
+        rootVC.present(self, animated: true, completion: completion ?? presentCompletion)
+      }
+    } else {
+      rootVC.present(self, animated: true, completion: completion ?? presentCompletion)
+    }
   }
 }
 
