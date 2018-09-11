@@ -59,19 +59,28 @@ public extension AlertPresentable where Self: UIAlertController {
   
   func show(on viewController: UIViewController? = nil,
             completion: (() -> Void)? = nil) {
-
-    guard let rootVC = UIViewController.topVC else {
-      print("Something wrong with your rootViewController at: \(#file), func: \(#function), line: \(#line)")
-      return
+    
+    UIApplication.shared.windows.forEach { (window) in
+      if let alertController = window.rootViewController as? UIAlertController {
+        alertController.dismiss(animated: false, completion: nil)
+      }
+      if let alertController = window.rootViewController?.presentedViewController as? UIAlertController {
+        alertController.dismiss(animated: false, completion: nil)
+      }
+      if let alertController = window.rootViewController?.presentingViewController as? UIAlertController {
+        alertController.dismiss(animated: false, completion: nil)
+      }
     }
+
+    // use user given viewController
     if let vc = viewController {
       let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
       if deviceIdiom == .pad {
         modalPresentationStyle = .popover
         if let popoverPC = popoverPresentationController {
-          popoverPC.sourceView = rootVC.view
-          popoverPC.sourceRect = CGRect(x: rootVC.view.bounds.midX,
-                                        y: rootVC.view.bounds.midY,
+          popoverPC.sourceView = vc.view
+          popoverPC.sourceRect = CGRect(x: vc.view.bounds.midX,
+                                        y: vc.view.bounds.midY,
                                         width: 0,
                                         height: 0)
           popoverPC.permittedArrowDirections = []
@@ -86,6 +95,12 @@ public extension AlertPresentable where Self: UIAlertController {
       }
       return
     }
+    
+    // use topVC
+    guard let rootVC = UIViewController.topVC else {
+      print("Something wrong with your rootViewController at: \(#file), func: \(#function), line: \(#line)")
+      return
+    }
     let deviceIdiom = UIScreen.main.traitCollection.userInterfaceIdiom
     if deviceIdiom == .pad {
       modalPresentationStyle = .popover
@@ -98,7 +113,7 @@ public extension AlertPresentable where Self: UIAlertController {
         popoverPC.permittedArrowDirections = []
       }
     }
-    //rootVC.present(self, animated: true, completion: completion ?? presentCompletion)
+    
     if let presentedVC = rootVC.presentedViewController {
       presentedVC.dismiss(animated: false) {
         rootVC.present(self, animated: true, completion: completion ?? presentCompletion)
